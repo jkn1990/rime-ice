@@ -40,8 +40,6 @@ patch:
     '{' : [ 「, 【, ｛ ]
     '}' : [ 」, 】, ｝ ]
 
-  # 改为挂载刚创建的 custom_melt_eng.dict.yaml
-  melt_eng/dictionary: custom_melt_eng
   # 关闭错音错字提示
   engine/filters/@0:
       # - lua_filter@corrector                # 错音错字提示
