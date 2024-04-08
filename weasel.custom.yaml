@@ -18,8 +18,8 @@ patch:
       ascii_mode: true
     powershell.exe:
       ascii_mode: true
-    # mintty.exe:
-    #   ascii_mode: true
+    pycharm64.exe:
+      ascii_mode: true
     # nvim-qt.exe:
     #   ascii_mode: true
     #   vim_mode: true       # vim 模式, Esc <C-c> <C-[> 切换到 ascii 状态
