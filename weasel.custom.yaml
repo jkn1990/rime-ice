@@ -34,4 +34,4 @@ patch:
   "style/layout/margin_y": 0
   "style/layout/spacing": 10
   "style/layout/candidate_spacing": 5
-  "style/layout/hilite_padding": 6
+  "style/layout/hilite_padding": 5
