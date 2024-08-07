@@ -1,6 +1,4 @@
 patch:
-  "style/horizontal": true  # true 横向 | false 竖向
-
   # [app_options]
   # 针对特定应用的设置
   app_options:
@@ -30,3 +28,10 @@ patch:
     #   ascii_mode: true
     #   vim_mode: true       # vim 模式, Esc <C-c> <C-[> 切换到 ascii 状态
   # [End of <app_options>]
+
+  "style/horizontal": false  # true 横向 | false 竖向
+  "style/layout/margin_x": 0
+  "style/layout/margin_y": 0
+  "style/layout/spacing": 10
+  "style/layout/candidate_spacing": 5
+  "style/layout/hilite_padding": 6
