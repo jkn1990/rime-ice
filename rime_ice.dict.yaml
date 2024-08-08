@@ -3,17 +3,21 @@
 
 ---
 name: rime_ice
-version: "2023-11-13"
+version: "2024.02.11"
+sort: by_weight
+# 此处为 输入法所用到的词库，既补充拓展词库的地方
+# 雾凇拼音词库，由Github Robot自动更新
 import_tables:
-  - cn_dicts/8105     # 字表
-  # - cn_dicts/41448  # 大字表（按需启用）
-  - cn_dicts/base     # 基础词库
-  - cn_dicts/ext      # 扩展词库
-  - cn_dicts/tencent  # 腾讯词向量（大词库，部署时间较长）
-  - cn_dicts/others   # 一些杂项
-
-  # 建议把扩展词库放到下面，有重复词条时，最上面的权重生效
-  - cn_dicts/sogou
+  - cn_dicts/custom_simple          # 自定义
+  - cn_dicts/rime_ice.8105          # 霧凇拼音 常用字集合
+  - cn_dicts/rime_ice.41448         # 霧凇拼音 完整字集合
+  - cn_dicts/rime_ice.base          # 雾凇拼音 基础词库
+  - cn_dicts/rime_ice.ext           # 雾凇拼音 扩展词库
+  - cn_dicts/other_kaomoji          # 颜文字表情（按`VV`呼出)
+  - cn_dicts/rime_ice.others        # 雾凇拼音 others词库（用于自动纠错）
+  - cn_dicts/zhwiki
+  # 20240608 Emoji完全交友OpenCC，不再使用字典作为补充
+  # - cn_dicts/other_emoji            # Emoji(仅仅作为补充，实际使用一般是OpenCC生效)
 ...
 
 # 按需启用：
