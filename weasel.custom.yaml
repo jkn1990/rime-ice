@@ -1,0 +1,38 @@
+patch:
+  # [app_options]
+  # 针对特定应用的设置
+  app_options:
+    firefox.exe:
+      inline_preedit: true # 行内显示预编辑区：规避 <https://github.com/rime/weasel/issues/946>
+    cmd.exe:               # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写; PR #1049 合并后释出的版本大小写不敏感
+      ascii_mode: true     # 英文模式
+    code.exe:
+      ascii_mode: true
+    sublime_text.exe:
+      ascii_mode: true
+    tabby.exe:
+      ascii_mode: true
+    dbeaver.exe:
+      ascii_mode: true
+    powershell.exe:
+      ascii_mode: true
+    pycharm64.exe:
+      ascii_mode: true
+    termius.exe:
+      ascii_mode: true
+    wezterm-gui.exe:
+      ascii_mode: true
+    neovide.exe:
+      ascii_mode: true
+    # nvim-qt.exe:
+    #   ascii_mode: true
+    #   vim_mode: true       # vim 模式, Esc <C-c> <C-[> 切换到 ascii 状态
+  # [End of <app_options>]
+
+  "style/horizontal": false  # true 横向 | false 竖向
+  "style/layout/margin_x": 0
+  "style/layout/margin_y": 0
+  "style/layout/spacing": 10
+  "style/layout/candidate_spacing": 5
+  "style/layout/hilite_padding_x": 8
+  "style/layout/hilite_padding_y": 4
