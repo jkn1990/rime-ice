@@ -2,6 +2,8 @@ patch:
 # Rime schema
 # encoding: utf-8
 
+  # 自定义词库
+  "translator/dictionary": rime_ice.custom
 
   # 输入双拼码的时候不转化为全拼码
   "translator/preedit_format": {}    # 输入双拼码的时候不转化为全拼码
